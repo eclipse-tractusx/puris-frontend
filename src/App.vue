@@ -30,7 +30,7 @@ import { RouterLink, RouterView } from "vue-router";
     >
       <div>
         <h2 class="text-3xl font-semibold text-center text-blue-800">
-          TEST
+          PURIS
         </h2>
       </div>
       <div class="flex flex-col justify-between mt-6">

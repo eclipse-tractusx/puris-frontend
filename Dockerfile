@@ -21,6 +21,9 @@
 
 FROM node:lts-alpine
 
+# build arg for setting mode (local, develop, integration or beta, defaults to develop)
+ARG npm_build_mode=develop
+
 # install simple http server for serving static content
 RUN npm install -g http-server
 
@@ -37,7 +40,7 @@ RUN npm install
 COPY . .
 
 # build app for production with minification
-RUN npm run build
+RUN npm run $npm_build_mode
 
 EXPOSE 8080
 CMD [ "http-server", "dist" ]
