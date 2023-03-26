@@ -61,6 +61,17 @@ const appName = import.meta.env.VITE_APP_NAME;
             </li>
             <li>
               <RouterLink
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/stocks"
+              ><img
+                  class="mr-2"
+                  src="@/assets/icons/stock.svg"
+                  alt="Icon"
+              />Stocks</RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
                 class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
                 to="/manageOrders"
                 ><img
