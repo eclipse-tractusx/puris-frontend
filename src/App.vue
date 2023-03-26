@@ -140,7 +140,7 @@ const appName = import.meta.env.VITE_APP_NAME;
         </aside>
       </div>
     </div>
-    <div class="ml-64 content-center overflow-auto">
+    <div class="sm:ml-64 lg:ml-0 content-center overflow-auto">
       <RouterView />
     </div>
   </div>
@@ -212,7 +212,7 @@ nav a:first-of-type {
   }
 
   #app {
-    display: grid;
+    //display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
