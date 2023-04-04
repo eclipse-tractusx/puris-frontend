@@ -52,15 +52,9 @@ export default {
       selectedStockId: "",
     };
   },
-  created() {
-    console.log("PartnerRole in StockTablesSFC: " + this.partnerRole);
-  },
-
   methods: {
     selectStock(stockId) {
       this.selectedStockId = stockId;
-      console.log(stockId);
-      console.log(this.selectedStockId);
     },
   },
 };
