@@ -20,8 +20,7 @@
 -->
 
 <script setup>
-import {RouterLink, RouterView} from "vue-router";
-
+import { RouterLink, RouterView } from "vue-router";
 const appName = import.meta.env.VITE_APP_NAME;
 </script>
 
@@ -32,7 +31,7 @@ const appName = import.meta.env.VITE_APP_NAME;
     >
       <div>
         <h2 class="text-3xl font-semibold text-center text-blue-800">
-          {{ this.appName }}
+          PURIS
         </h2>
       </div>
       <div class="flex flex-col justify-between mt-6">
