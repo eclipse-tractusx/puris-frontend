@@ -21,12 +21,13 @@
 
 <script setup>
 import { RouterLink, RouterView } from "vue-router";
+const appName = import.meta.env.VITE_APP_NAME;
 </script>
 
 <template>
   <div class="flex">
     <div
-      class="flex flex-col overflow-y-auto border-r w-64 fixed left-0 top-0 h-screen p-10"
+        class="flex flex-col overflow-y-auto border-r w-64 fixed left-0 top-0 h-screen p-10"
     >
       <div>
         <h2 class="text-3xl font-semibold text-center text-blue-800">
@@ -38,98 +39,118 @@ import { RouterLink, RouterView } from "vue-router";
           <ul class="space-y-2">
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/home.svg"
                   alt="Icon"
-                />Dashboard</RouterLink
+              />Dashboard
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/createOrder"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/createOrder"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/create.svg"
                   alt="Icon"
-                />Create</RouterLink
+              />Create
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/manageOrders"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/stocks"
+              ><img
+                  class="mr-2"
+                  src="@/assets/icons/stock.svg"
+                  alt="Icon"
+              />Stocks
+              </RouterLink
+              >
+            </li>
+            <li>
+              <RouterLink
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/manageOrders"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/manage.svg"
                   alt="Icon"
-                />Manage</RouterLink
+              />Manage
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/connectors"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/connectors"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/manage.svg"
                   alt="Icon"
-                />Connectors</RouterLink
+              />Connectors
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/catalog"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/catalog"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/catalog.svg"
                   alt="Icon"
-                />Catalog</RouterLink
+              />Catalog
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/negotiations"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/negotiations"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/catalog.svg"
                   alt="Icon"
-                />Negotiations</RouterLink
+              />Negotiations
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/transfers"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/transfers"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/catalog.svg"
                   alt="Icon"
-                />Transfers</RouterLink
+              />Transfers
+              </RouterLink
               >
             </li>
             <li>
               <RouterLink
-                class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
-                to="/responses"
-                ><img
+                  class="flex items-center px-4 py-2 text-gray-700 bg-gray-100 dark:text-gray-100 dark:bg-gray-700 rounded-md"
+                  to="/responses"
+              ><img
                   class="mr-2"
                   src="@/assets/icons/responses.svg"
                   alt="Icon"
-                />Responses</RouterLink
+              />Responses
+              </RouterLink
               >
             </li>
           </ul>
         </aside>
       </div>
     </div>
-    <div class="ml-64 content-center overflow-auto">
-      <RouterView />
+    <div class="sm:ml-64 lg:ml-0 content-center overflow-auto">
+      <RouterView/>
     </div>
   </div>
 </template>
@@ -200,9 +221,7 @@ nav a:first-of-type {
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  //display: grid; grid-template-columns: 1fr 1fr; padding: 0 2rem;
   }
 
   header {
