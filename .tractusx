@@ -1,0 +1,6 @@
+product: "Puris Frontend"
+leadingRepository: "https://github.com/eclipse-tractusx/puris-frontend"
+repositories:
+- name: "puris-frontend"
+  usage: "implementation of Puris Frontend"
+  url: "https://github.com/eclipse-tractusx/puris-frontend"
