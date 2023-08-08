@@ -1,3 +1,8 @@
+# ARCHIVED
+
+> **Warning**
+This repository is archived and not active anymore! The latest version is available at [eclipse-tractusx/puris](https://github.com/eclipse-tractusx/puris).
+
 <div align="center">
   <h2 align="center">PURIS Frontend</h2>
   The frontend of the Catena-X Predictive Unit Real-Time Information Service (PURIS)
